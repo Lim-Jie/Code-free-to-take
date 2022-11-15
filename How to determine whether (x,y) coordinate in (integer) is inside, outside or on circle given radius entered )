@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class nouse2 {
+    public static void main(String[] args) {
+        
+        System.out.println("Enter radius of circle: ");
+        Scanner input= new Scanner(System.in);
+        int radius= input.nextInt();
+        System.out.println("Enter x coordinate and y coordinate: ");
+        int x = input.nextInt();
+        int y = input.nextInt();
+        
+        if (x>-radius && x<radius ){
+           if (y>=-6 && y<=6){
+                System.out.println("Point is inside of circle");}}
+           
+        if (((x==radius || x==-radius)&& y==0) || 
+                ((y==radius || y==-radius) && x==0)){
+            System.out.println("Point is on circle");}
+        
+        else { System.out.println("Point is outside circle");}
+        }
+}
